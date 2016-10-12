@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <description>Servlet de test Hello</description>
+        <servlet-class>td.servlet.Hello</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>HelloServletConfig</servlet-name>
+        <description>Servlet de test HelloConfig</description>
+        <servlet-class>td.servlet.HelloConfig</servlet-class>
+        <init-param>
+            <param-name>lang</param-name>
+            <param-value>fr</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet>
+        <servlet-name>HelloServletParam</servlet-name>
+        <description>Servlet de test HelloParam</description>
+        <servlet-class>td.servlet.HelloParam</servlet-class>
+        <init-param>
+            <param-name>lang</param-name>
+            <param-value>fr</param-value>
+        </init-param>
+        <init-param>
+            <param-name>nom</param-name>
+            <param-value>Damien</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>RedirectServlet</servlet-name>
+        <description>Servlet de test Redirect</description>
+        <servlet-class>td.servlet.Redirect</servlet-class>
+        <init-param>
+            <param-name>page</param-name>
+            <param-value>1</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/Hello</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/Hello/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HelloServletConfig</servlet-name>
+        <url-pattern>/HelloConfig</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HelloServletParam</servlet-name>
+        <url-pattern>/HelloParam</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>RedirectServlet</servlet-name>
+        <url-pattern>/Redirect</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>SessionInitServlet</servlet-name>
+        <description>Servlet de test Hello</description>
+        <servlet-class>td.servlet.SessionInit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionInitServlet</servlet-name>
+        <url-pattern>/SessionInit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SessionShowServlet</servlet-name>
+        <description>Servlet de test Hello</description>
+        <servlet-class>td.servlet.SessionShow</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionShowServlet</servlet-name>
+        <url-pattern>/SessionShow</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SessionStopServlet</servlet-name>
+        <description>Servlet de test Hello</description>
+        <servlet-class>td.servlet.SessionStop</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionStopServlet</servlet-name>
+        <url-pattern>/SessionStop</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ForwardServlet</servlet-name>
+        <description>Servlet de test Hello</description>
+        <servlet-class>td.servlet.Forward</servlet-class>
+        <init-param>
+            <param-name>page</param-name>
+            <param-value>1</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForwardServlet</servlet-name>
+        <url-pattern>/Forward</url-pattern>
+    </servlet-mapping>
+    
+
+</web-app>
+

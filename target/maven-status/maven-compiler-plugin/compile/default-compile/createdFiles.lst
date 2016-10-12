@@ -1,0 +1,8 @@
+td\servlet\Redirect.class
+td\servlet\HelloConfig.class
+td\servlet\SessionInit.class
+td\servlet\HelloParam.class
+td\servlet\SessionShow.class
+td\servlet\Forward.class
+td\servlet\SessionStop.class
+td\servlet\Hello.class

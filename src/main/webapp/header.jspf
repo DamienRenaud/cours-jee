@@ -1,0 +1,9 @@
+
+<header>
+    <h1>HEADER</h1>
+    <%! int count = 0;
+        private void incrementCount(){
+            count++;
+        }
+    %>
+</header>
